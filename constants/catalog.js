@@ -4,7 +4,7 @@ const CATALOG = [
         name: 'Доктор, который научился лечить все. Беседы о сверхновой медицине',
         author: 'Александр Никонов',
         img: 'https://i.ibb.co/R0DnpXb/med.jpg',
-        price: 555,
+        price: 1050,
     },
     {
         id: 'el2',
