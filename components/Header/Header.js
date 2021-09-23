@@ -14,7 +14,4 @@ class Header {
     }
 }
 
-const productsStore = localStorageUtils.getProducts();
-
 const headerPage = new Header();
-headerPage.render(productsStore.length);
