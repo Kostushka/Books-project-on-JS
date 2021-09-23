@@ -1,6 +1,7 @@
 :root {
     --background-color: rgb(174, 213, 214);
     --color-white: rgba(248, 248, 248, 0.877);
+    --color-table: white;
     --color-unaccent: #808080;
 
     --spacing-sm: 10px;
