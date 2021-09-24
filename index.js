@@ -4,6 +4,8 @@ function render() {
     productsPage.render();
 }
 
+preloaderPage.render();
+
 let CATALOG = [];
 
 fetch('server/catalog.json')
@@ -11,7 +13,10 @@ fetch('server/catalog.json')
     .then((res) => res.json())
     .then((body) => {
         CATALOG = body;
-        render();
+        setTimeout(() => {
+            preloaderPage.handleClear();
+            render();
+        }, 1000);
     })
     .catch((error) => {
         console.log(error);
