@@ -4,6 +4,8 @@
     --color-table: white;
     --color-unaccent: #808080;
     --color-dark: #505050;
+    --color-error-light: #f25b6b;
+    --color-error-dark: #d65c5c;
 
     --spacing-sm: 10px;
     --spacing-medium: 15px;

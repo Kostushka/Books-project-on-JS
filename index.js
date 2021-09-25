@@ -13,11 +13,10 @@ fetch('server/catalog.json')
     .then((res) => res.json())
     .then((body) => {
         CATALOG = body;
-        setTimeout(() => {
-            preloaderPage.handleClear();
-            render();
-        }, 1000);
+        preloaderPage.handleClear();
+        render();
     })
     .catch((error) => {
-        console.log(error);
+        preloaderPage.handleClear();
+        errorPage.render();
     });
